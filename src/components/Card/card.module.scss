@@ -1,0 +1,21 @@
+.card {
+  min-width: 260px;
+  width: 30%;
+  margin:  50px auto;
+  box-shadow: 1px 0 4px 1px #202421;
+  border-radius: 10px;
+  padding: 30px;
+  letter-spacing: 1px;
+  background: beige;
+  h1{
+    color: #545452;
+    letter-spacing: 2px;
+  }
+  p{
+    font-size: 18px;
+    color: #009879;
+    span{
+      color: red;
+    }
+  }
+}

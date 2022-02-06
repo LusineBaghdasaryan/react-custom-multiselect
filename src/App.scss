@@ -1,0 +1,16 @@
+$body-bg-color:#d3cdcc;
+$base-color-1: #31455c;
+$base-color-2: #3cad8e;
+$base-color-3: #633564;
+$view-btn: #F754AE;
+
+@mixin shadow {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+}
+
+body {
+  background-color: $body-bg-color;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}

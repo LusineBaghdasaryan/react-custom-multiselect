@@ -1,0 +1,40 @@
+@import "../../App";
+
+.tableBlock {
+  @include shadow;
+  white-space: nowrap;
+  font-size: 0.9em;
+  width: 90%;
+  margin: auto;
+  min-width: 300px;
+  max-height: 420px;
+  overflow-y: auto;
+  overflow-x: auto;
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  .header {
+    background-color: $base-color-2;
+    color: #ffffff;
+    text-align: left;
+    position: sticky;
+    top:0;
+  }
+  th{
+    text-align: center;
+  }
+  th,td{
+    padding: 12px 15px;
+  }
+  tr {
+    border-bottom: 1px solid #dddddd;
+    &:nth-of-type(even){
+      background-color: #f3f3f3;
+    }
+    &:last-of-type{
+      border-bottom: 2px solid #009879;
+    }
+  }
+}

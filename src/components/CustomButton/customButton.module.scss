@@ -1,0 +1,27 @@
+@import "../../App";
+
+.customButton {
+  font-size: 16px;
+  font-weight: 900;
+  outline: none;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 10px;
+  background: $base-color-2;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  &:disabled{
+    background-color: #cccccc;
+    cursor:default;
+    box-shadow: none;
+  }
+  &:hover {
+    @include shadow;
+    cursor: pointer;
+  }
+}

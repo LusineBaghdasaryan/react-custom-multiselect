@@ -1,0 +1,114 @@
+@import "../../App";
+
+.multiselectSearch {
+  @include shadow;
+  width: 90%;
+  margin: 50px auto;
+  min-width: 300px;
+
+  .inputArea {
+    min-width: 300px;
+    min-height: 24px;
+    background: $base-color-1;
+    font-size: 14px;
+    padding: 5px;
+
+    .inputAndButton {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .selectedTagsArea {
+      max-height: 15vh;
+      overflow-y: auto;
+      padding: 0 10px;
+
+      .tags {
+        font-size: 17px;
+        display: inline-block;
+        color: $base-color-3;
+        background: #e1e1e1;
+        border-radius: 4px;
+        margin: 2px;
+        padding: 5px;
+        min-width: 50px;
+
+        span {
+          margin-left: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+        }
+
+      }
+    }
+
+    .inputBox {
+      border: 1px solid #c1c1c1;
+      background: #e1e1e1;
+      font-size: 14px;
+      padding: 10px 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 65%;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+}
+
+.optionArea {
+  z-index: 1;
+  min-height: 70px;
+  min-width: 300px;
+  position: absolute;
+  padding: 5px;
+  width: calc(90% - 25px);
+  max-height: 250px;
+  overflow-y: auto;
+  background: $base-color-1;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+
+  .buttonsArea {
+    z-index: 1;
+    position: fixed;
+    width: calc(90% - 15px);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .option {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:nth-of-type(1) {
+      margin-top: 80px;
+    }
+
+    &:hover {
+      background: #c6c2c2;
+      color: #000;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .active span {
+    display: block;
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+  }
+}
